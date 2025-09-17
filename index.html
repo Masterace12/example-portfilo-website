@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Theme</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me <button id="edit-about">Edit</button></h2>
+            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating modern and responsive websites.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><span>HTML</span><button class="remove-skill">x</button></div>
+                <div class="skill-card"><span>CSS</span><button class="remove-skill">x</button></div>
+                <div class="skill-card"><span>JavaScript</span><button class="remove-skill">x</button></div>
+            </div>
+            <form id="add-skill-form">
+                <input type="text" id="skill-name" placeholder="Skill Name" required>
+                <button type="submit">Add Skill</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/300" alt="Project Image">
+                    <div class="project-card-content">
+                        <h3>Project 1</h3>
+                        <p>A brief description of the first project.</p>
+                        <div class="technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="#" target="_blank">View Project</a>
+                        <button class="remove-project">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <form id="add-project-form">
+                <h3>Add a New Project</h3>
+                <div class="form-group">
+                    <input type="text" id="project-title" placeholder="Project Title" required>
+                    <textarea id="project-description" placeholder="Project Description" required></textarea>
+                    <input type="text" id="project-technologies" placeholder="Technologies (comma-separated)" required>
+                    <input type="url" id="project-link" placeholder="Project Link" required>
+                    <input type="url" id="project-image" placeholder="Image URL" required>
+                    <button type="submit">Add Project</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
